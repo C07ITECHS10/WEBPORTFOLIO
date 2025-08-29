@@ -1,0 +1,339 @@
+:root {
+  --bg-color: #fdfdfd;
+  --text-color:#333;
+  --main-color: #754ef9;
+  --white-color: #fff;
+  --shadow-color: rgba(0,0,0,.2);
+}
+
+/* General */ 
+body {
+  background-color: #000000; 
+  color: rgb(255, 255, 255); 
+  font-family: 'Poppins', sans-serif; 
+  padding-top: 70px; 
+  /* to avoid navbar overlap */
+  scroll-behavior: smooth; 
+  background: url(https://wallpaper.dog/large/10946452.jpg);
+  }
+ 
+/* Navbar Brand Glow */ 
+.brand-glow span { 
+  color: rgba(157, 0, 255, 0.952);
+  transition: text-shadow 0.3s ease;
+ }
+
+.brand-glow :hover {
+  text-shadow: 0 0 10px rgb(187, 0, 255), 0 0 20px rgb(238, 0, 255);
+  transition: text-shadow 0.3s ease;
+}
+
+.navbar {
+background-color: #1d0e41;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link :active {
+  margin-left: 20px;
+  transition: 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: rgb(170, 0, 255) !important;
+}
+
+/*PROFILE PIC SECTION*/
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+/* Profile Glow */
+.profile-pic {
+  width: 350px;
+  height: 350px;
+  background-color: rgb(180, 0, 255);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgb(126, 0, 161);
+  transition: 0.3s ease;
+}
+ /*profile pic position*/
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;   
+}
+ /*profile pic glow*/
+.profile-pic:hover {
+  background: rgb(201, 0, 251);
+  box-shadow: 0 0 10px rgb(171, 3, 255), 0 0 20px rgb(168, 6, 232), 0 0 30px rgb(144, 0, 255);
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text Highlights */
+.hero h1 span,
+.hero h3 strong{
+   white-space: nowrap;
+  color: rgb(174, 0, 255);
+  
+}
+
+/* Social Icons */
+.hero a:hover {
+  color: rgb(0, 0, 0) !important;
+  text-shadow: 0 0 10px rgb(247, 0, 255);
+}
+
+/* Glowing Button */
+.btn-glow {
+  background: rgb(117, 0, 251);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: px;
+  padding: 10px 25px;
+  transition: 0.3s ease;
+}
+.btn-glow:hover {
+  background: rgb(201, 0, 251);
+  box-shadow: 0 0 10px rgb(171, 3, 255), 0 0 20px rgb(168, 6, 232), 0 0 30px rgb(144, 0, 255);
+  color: black;
+}
+
+.btn-glows {
+  background: rgb(117, 0, 251);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: px;
+  padding: 10px 25px;
+  transition: 0.3s ease;
+  position: absolute;
+}
+.btn-glows:hover {
+  background: rgb(201, 0, 251);
+  box-shadow: 0 0 10px rgb(171, 3, 255), 0 0 20px rgb(168, 6, 232), 0 0 30px rgb(144, 0, 255);
+  color: black;
+}
+/*HOME SECTION*/
+
+/* Sections */
+.section{
+  min-height: 100vh; 
+}
+
+
+section {
+  min-height: 100vh;   
+  display: flex;       
+  align-items: center; 
+  justify-content: center; 
+}
+
+
+.glass-card {
+    max-width: 700px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);          
+    -webkit-backdrop-filter: blur(10px);  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  /*ABOUT ME */
+
+  /*for animation*/
+  @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-box {
+  height: 1000px;
+  opacity: 0; 
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about-box.show {
+  animation: fadeInUp 1s ease forwards;
+}
+  /*for animation*/
+
+  .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-box {
+  height: 100vh;
+  width: 100%;
+  background: rgba(207, 163, 163, 0.1); 
+  backdrop-filter: blur(10px);          
+  -webkit-backdrop-filter: blur(10px);  
+  border-radius: 25px;                  
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: #fff; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.about .display-5 h2 p {
+ text-shadow: none !important; /*for the text to anoid glow effect*/
+}
+
+.about-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(171, 3, 255),
+              0 0 20px rgb(168, 6, 232),
+              0 0 30px rgb(144, 0, 255);
+}
+/*ABOUT ME */
+
+/*SKILLS*/
+
+/* Services Section */
+
+.services {
+  padding: 5rem 0;
+  min-height: auto;
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.services h2 span {
+  color: var(--main-color); 
+}
+
+
+.services h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 6px;
+  background: var(--main-color);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+.service-box {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-top: .5rem solid var(--main-color);
+  border-bottom: .5rem solid var(--main-color);
+  transition: all 0.3s ease;
+}
+
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+.service-box i {
+  font-size: 4rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+.services h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.services h2 span {
+  color: var(--main-color);
+}
+
+
+.service-box h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+
+.service-box:hover h3 {
+  color: var(--main-color);
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+
+.btn-glow {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--main-color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  background: #5a23b5;
+  box-shadow: 0 0 15px var(--main-color);
+}
+/*SKILLS*/
+
+#home { background: #ffffff; }
+#Education { background: #200364; }
+#about { background: #0f0c0f; }
+#services { background:#fcfcfc; }
+#others { background: #200364; }
